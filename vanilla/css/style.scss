@@ -1,0 +1,19 @@
+.input-area {
+  background-color: #c1ffff; 
+  width: 400px;
+  height: 30px;
+  padding: 8px;
+  margin: 8px;
+  border-radius: 8px;
+  &_incomplete {
+    background-color: #c6ffe2;
+    height: auto;
+    min-height: 200px;
+  }
+  &_complete {
+    background: #ffffe0;
+    height: auto;
+    min-height: 200px;
+  }
+}
+
