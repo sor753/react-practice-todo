@@ -1,24 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import ColorfulMessage from './components/ColorfulMessage';
 
-function App() {
+const App = () => {
+  const onClickButton = () => alert();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <h1 style={{ color: 'red' }}>こんにちは！</h1>
+      <ColorfulMessage color="blue" message="お元気ですか？" />
+      <ColorfulMessage color="pink" message="元気です！" />
+      <button onClick={onClickButton}>ボタン</button>
+    </React.Fragment>
+
   );
 }
 
